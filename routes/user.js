@@ -10,18 +10,6 @@ const users = require('../models/users');
 const router = express.Router();
 
 
-//need to add authentication to this route
-router.get('/session', async (req, res, next) => { //was initally /current
-    try {
-        const user = req.user;
-        const result = await User.findUserByUsername(user.username);
-        res.status(201).json(result);
-    } catch (err) {
-        console.error('Failed to load current user:', err);
-        res.sendStatus(500).json({ message: err.toString() });
-    }
-});
-
 router.post('/account', async (req, res, next) => { //was initally just '/'. Makes new account
     try {
         const body = req.body;

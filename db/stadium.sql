@@ -4,8 +4,7 @@ USE stadium_project;
 ALTER USER 'root'@localhost IDENTIFIED WITH mysql_native_password BY 'password';
 flush privileges;
 
-#Drop the tables so, that it works and chnage employees form name to username
-
+SELECT * FROM Employee;
 
 CREATE TABLE Stadium(
      name VARCHAR(255) PRIMARY KEY,
