@@ -1,7 +1,7 @@
 const express = require('express');
-const User = require('../models/students');
+const users = require('../models/users');
 
-/**
+/*
  * https://expressjs.com/en/guide/routing.html#express-router
  * 
  * A router is a special Express object that can be used to define how to route and manage
@@ -26,7 +26,7 @@ router.post('/account', async (req, res, next) => { //was initally just '/'. Mak
     try {
         const body = req.body;
         console.log(body);
-        const result = await req.models.user.createNewUser(body.username, body.password, body.entryPointLot, body.entryPointEevnt);
+        const result = await users.createNewUser(body.username, body.password, body.entryPointLot, body.entryPointEevnt);
         res.status(201).json(result);
         //need to add check if payload insufficient
     } catch (err) {
