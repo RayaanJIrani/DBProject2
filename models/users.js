@@ -1,16 +1,16 @@
 const knex = require('../database/knex');
 const bcrypt = require('bcrypt');
 
-const USER_TABLE = 'users';
+const USER_TABLE = 'Employee';
 
-const createNewUser = async (user, password) => {
+const createNewUser = async (user, password,entryPointLot, entryPointEvent) => {
     console.log('Raw password:', password);
     const salt = await bcrypt.genSalt(10);
     console.log('Password salt', salt);
     const hashedPassword = await bcrypt.hash(password, salt);
     console.log('Hashed password', hashedPassword);
 
-    const query = knex(USER_TABLE).insert({ username, password: hashedPassword });
+    const query = knex(USER_TABLE).insert({ username, password: hashedPassword, entryPointLot, entryPointEvent });
     console.log('Raw query for createNewUser:', query.toString());
     const result = await query;
 

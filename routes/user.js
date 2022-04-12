@@ -10,7 +10,8 @@ const User = require('../models/students');
 const router = express.Router();
 
 
-router.get('/current', async (req, res, next) => {
+//need to add authentication to this route
+router.get('/session', async (req, res, next) => { //was initally /current
     try {
         const user = req.user;
         const result = await User.findUserByUsername(user.username);
@@ -21,12 +22,13 @@ router.get('/current', async (req, res, next) => {
     }
 });
 
-router.post('/', async (req, res, next) => {
+router.post('/account', async (req, res, next) => { //was initally just '/'. Makes new account
     try {
         const body = req.body;
         console.log(body);
-        const result = await req.models.user.createNewUser(body.username, body.password);
+        const result = await req.models.user.createNewUser(body.username, body.password, body.entryPointLot, body.entryPointEevnt);
         res.status(201).json(result);
+        //need to add check if payload insufficient
     } catch (err) {
         console.error('Failed to create new user:', err);
         res.status(500).json({ message: err.toString() });

@@ -15,8 +15,9 @@ router.post('/', async (req, res, next) => {
         
         const result = await req.models.user.authenticateEmployee(body.username, body.password);
         res.status(201).json(result);
+        //need to add a 401 error code for invalid credentials
     } catch (err) {
-        console.error('Failed to create new user:', err);
+        console.error('Failed to authenticate user:', err);
         res.status(500).json({ message: err.toString() });
     }
 

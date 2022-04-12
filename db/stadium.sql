@@ -1,6 +1,9 @@
 CREATE DATABASE stadium_project;
 USE stadium_project;
 
+#Drop the tables so, that it works and chnage employees form name to username
+
+
 CREATE TABLE Stadium(
      name VARCHAR(255) PRIMARY KEY,
      address VARCHAR(255) NOT NULL,
@@ -47,9 +50,9 @@ CREATE TABLE Entry_Point(
 
 
 CREATE TABLE Employee(
-    name VARCHAR(255) NOT NULL, #This is the username
+    username VARCHAR(255) NOT NULL, #This is the username
     password VARCHAR(255) NOT NULL, #This is the password
-    employee_id INTEGER PRIMARY KEY NOT NULL,
+    employee_id SERIAL PRIMARY KEY NOT NULL,
     Entry_Point_lot VARCHAR(255) NOT NULL,
     Entry_Point_event INTEGER NOT NULL,
     FOREIGN KEY (Entry_Point_lot) REFERENCES Entry_Point(parking_lot),
