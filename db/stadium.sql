@@ -6,7 +6,6 @@ flush privileges;
 
 #Drop the tables so, that it works and chnage employees form name to username
 
-SELECT * FROM stadium_project.Employee;
 
 CREATE TABLE Stadium(
      name VARCHAR(255) PRIMARY KEY,
@@ -54,7 +53,7 @@ CREATE TABLE Entry_Point(
 
 
 CREATE TABLE Employee(
-    username VARCHAR(255) NOT NULL, #This is the username
+    username VARCHAR(255) NOT NULL UNIQUE , #This is the username (must be unique)
     password VARCHAR(255) NOT NULL, #This is the password
     employee_id SERIAL PRIMARY KEY NOT NULL,
     Entry_Point_lot VARCHAR(255) NOT NULL,
