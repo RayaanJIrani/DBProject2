@@ -37,7 +37,7 @@ router.get('/spots', async  (req, res, next) => {
     try {
         const result = await spotsController.getSpots(req.query.stadium, req.query.lot, req.query.available);
       //  const result = await spots.getSpots(req.query);
-        res.status(200).json("Hello");
+        res.status(200).json(result);
     } catch (err) {
         console.error('Server side error:', err);
         res.sendStatus(500).json({ message: err.toString() });

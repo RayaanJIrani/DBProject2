@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Finished get session (with authentication)">
+    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Changed SQL setup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/spots.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/spots.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/parking_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/parking_schema.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/stadium.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/stadium.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/spots.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/spots.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/spot.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/spot.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +58,8 @@
       <updated>1649703250579</updated>
       <workItem from="1649703251993" duration="524000" />
       <workItem from="1649791186923" duration="6166000" />
-      <workItem from="1649798544211" duration="8040000" />
+      <workItem from="1649798544211" duration="9527000" />
+      <workItem from="1649854826440" duration="6828000" />
     </task>
     <task id="LOCAL-00001" summary="Added changes which can be used as a backbone. Note -- untested">
       <created>1649775758286</created>
@@ -106,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649810579463</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changed SQL setup">
+      <created>1649814927159</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649814927159</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +146,7 @@
     <MESSAGE value="Made slight changes. Will need to talk to you about the get session.js" />
     <MESSAGE value="Made the code work with authentication" />
     <MESSAGE value="Finished get session (with authentication)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished get session (with authentication)" />
+    <MESSAGE value="Changed SQL setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed SQL setup" />
   </component>
 </project>
