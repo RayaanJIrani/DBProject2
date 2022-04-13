@@ -7,7 +7,13 @@ const getSpots = async (filters, stadiumParking) => {
         .select('*');
 }
 
+const getParkingLots = async(filter) => {
+    return knex('Parking_lot') //returns the ids of all the parking lots
+        .where(filter)
+        .select('id'); //only retusn the id of the parking lot
+}
 //const getParkingLots = async()
 module.exports = {
-    getSpots
+    getSpots,
+    getParkingLots
 }

@@ -127,7 +127,7 @@ VALUES (1,1,FALSE,FALSE),
        (1,3,TRUE,TRUE);
 
 #Fans must be added via API call
-/*
+
 
 #Representative of the total number of cowpoke fans
 INSERT INTO Fan(name, DL_id, is_disables,vehicle_type,license_plate)
@@ -141,14 +141,12 @@ VALUES ('A',1,FALSE,'Coupe','A'),
        ('H',8,FALSE,'Truck','H');
 
 
- */
-
 
 INSERT INTO Entry_Point(parking_lot, event_id, is_open)
-VALUES ('A lot',1,TRUE),
-       ('D lot',2,TRUE),
-       ('B lot',3,TRUE),
-       ('E lot',4,TRUE);
+VALUES (1,1,TRUE),
+       (4,2,TRUE),
+       (2,3,TRUE),
+       (5,4,TRUE);
 
 
 #These items have to be done via the API
