@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="">
+    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Made the code work with authentication">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/spot.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/spot.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,23 +14,34 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="WestleyBranch" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27fFUa2qrpHg88DgyzUhVeNQwi5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -41,10 +53,79 @@
       <option name="presentableId" value="Default" />
       <updated>1649703250579</updated>
       <workItem from="1649703251993" duration="524000" />
+      <workItem from="1649791186923" duration="6166000" />
+      <workItem from="1649798544211" duration="4583000" />
     </task>
+    <task id="LOCAL-00001" summary="Added changes which can be used as a backbone. Note -- untested">
+      <created>1649775758286</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649775758286</updated>
+    </task>
+    <task id="LOCAL-00002" summary="These changes produce a product which has a minimally viable account route. I'm still making changes to allow for that route to do the following: (1) return all of the info for a newly registered use and (2) produce an error when not all fields are entered.">
+      <created>1649782189559</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649782189559</updated>
+    </task>
+    <task id="LOCAL-00003" summary="I think that these are the last changes for a working post /account route">
+      <created>1649783245746</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649783245746</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Made the post /session route work">
+      <created>1649786927601</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649786927601</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Made slight changes. Will need to talk to you about the get session.js">
+      <created>1649789353247</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649789353247</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Made the code work with authentication">
+      <created>1649808524348</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649808524348</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added changes which can be used as a backbone. Note -- untested" />
+    <MESSAGE value="These changes produce a product which has a minimally viable account route. I'm still making changes to allow for that route to do the following: (1) return all of the info for a newly registered use and (2) produce an error when not all fields are entered." />
+    <MESSAGE value="I think that these are the last changes for a working post /account route" />
+    <MESSAGE value="Made the post /session route work" />
+    <MESSAGE value="Made slight changes. Will need to talk to you about the get session.js" />
+    <MESSAGE value="Made the code work with authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made the code work with authentication" />
   </component>
 </project>
