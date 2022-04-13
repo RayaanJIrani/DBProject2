@@ -1,5 +1,6 @@
 const express = require('express');
-//const spotsController = require('../controllers/spots');
+const spotsController = require('../controllers/spots');
+const employeeModel = require('../models/Employees');
 
 /**
  * https://expressjs.com/en/guide/routing.html#express-router
@@ -9,17 +10,18 @@ const express = require('express');
  */
 const router = express.Router();
 
-//need to add authentication to this route
+
 router.get('/session',async (req, res, next) => { //was initally /current and is now the get session route
     //This route effectivly takes the info from the token, and then calls the find user by username function to get all of the account info
     try {
-
+        const username = req.user.username;
+        const result = await employeeModel.findUserByUsername(username);
         /*
         const user = req.user;
         const result = await User.findUserByUsername(user.username);
         res.status(201).json(result);
         */
-        res.status(201).json("It works");
+        res.status(201).json(result[0]);
 
     } catch (err) {
         console.error('Server side error:', err);
@@ -27,7 +29,7 @@ router.get('/session',async (req, res, next) => { //was initally /current and is
     }
 });
 
-//add authentication to this route
+
 router.get('/spot', async  (req, res, next) => {
     res.status(201).json("It works");
 });

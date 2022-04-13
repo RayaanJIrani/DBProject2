@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Made slight changes. Will need to talk to you about the get session.js">
-      <change afterPath="$PROJECT_DIR$/routes/spot.js" afterDir="false" />
+    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Made the code work with authentication">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/spots.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/spots.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/spots.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/spots.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/session.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/session.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/spots.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/spot.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/spot.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +54,7 @@
       <updated>1649703250579</updated>
       <workItem from="1649703251993" duration="524000" />
       <workItem from="1649791186923" duration="6166000" />
-      <workItem from="1649798544211" duration="3436000" />
+      <workItem from="1649798544211" duration="4583000" />
     </task>
     <task id="LOCAL-00001" summary="Added changes which can be used as a backbone. Note -- untested">
       <created>1649775758286</created>
@@ -96,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649789353247</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Made the code work with authentication">
+      <created>1649808524348</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649808524348</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +125,7 @@
     <MESSAGE value="I think that these are the last changes for a working post /account route" />
     <MESSAGE value="Made the post /session route work" />
     <MESSAGE value="Made slight changes. Will need to talk to you about the get session.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made slight changes. Will need to talk to you about the get session.js" />
+    <MESSAGE value="Made the code work with authentication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made the code work with authentication" />
   </component>
 </project>
