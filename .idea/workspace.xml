@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Added stuff to the get spots.&#10;Also, changed DB configuration.">
+    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Finished and tested the get spots route.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/spots.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/spots.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/parking_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/parking_schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/spots.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/spots.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/middlewre.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/logger.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <workItem from="1649703251993" duration="524000" />
       <workItem from="1649791186923" duration="6166000" />
       <workItem from="1649798544211" duration="9527000" />
-      <workItem from="1649854826440" duration="12830000" />
+      <workItem from="1649854826440" duration="16110000" />
     </task>
     <task id="LOCAL-00001" summary="Added changes which can be used as a backbone. Note -- untested">
       <created>1649775758286</created>
@@ -122,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649864851159</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finished and tested the get spots route.">
+      <created>1649874900628</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649874900628</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +161,7 @@
     <MESSAGE value="Finished get session (with authentication)" />
     <MESSAGE value="Changed SQL setup" />
     <MESSAGE value="Added stuff to the get spots.&#10;Also, changed DB configuration." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added stuff to the get spots.&#10;Also, changed DB configuration." />
+    <MESSAGE value="Finished and tested the get spots route." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished and tested the get spots route." />
   </component>
 </project>
