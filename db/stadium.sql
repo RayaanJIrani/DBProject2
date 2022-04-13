@@ -61,11 +61,13 @@ CREATE TABLE Employee(
     FOREIGN KEY (Entry_Point_event) REFERENCES Entry_Point(event_id)
 );
 
+
 CREATE TABLE Parking_allocation(
+  id SERIAL PRIMARY KEY,
   Employee_id INTEGER REFERENCES Employee(employee_id),
   Fan INTEGER REFERENCES Fan(DL_id),
-  Parking_spot_id INTEGER REFERENCES Parking_spot(id),
-  PRIMARY KEY (Employee_id, Parking_spot_id,Fan)
+  Parking_spot_id INTEGER REFERENCES Parking_spot(id)
+
 );
 
 
