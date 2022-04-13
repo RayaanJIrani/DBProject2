@@ -1,6 +1,5 @@
 const express = require('express');
 const UserController = require('../controllers/users');
-const auth = require('../middleware/auth');
 
 /**
  * https://expressjs.com/en/guide/routing.html#express-router
@@ -10,19 +9,7 @@ const auth = require('../middleware/auth');
  */
 const router = express.Router();
 
-//need to add authentication to this route
-router.get('/session',async (req, res, next) => { //was initally /current and is now the get session route
-    try {
-        /*
-        const user = req.user;
-        const result = await User.findUserByUsername(user.username);
-        res.status(201).json(result);
-        */
-    } catch (err) {
-        console.error('Server side error:', err);
-        res.sendStatus(500).json({ message: err.toString() });
-    }
-});
+
 
 router.post('/session', async (req, res, next) => { //this is the post /session route
     try {

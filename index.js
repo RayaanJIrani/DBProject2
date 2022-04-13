@@ -9,10 +9,10 @@ const mysql = require('mysql');
 //import route handlers
 const sessionRoutes = require('./routes/session');
 const userRoutes = require('./routes/user');
-//const spotRoutes = require('./routes/spot'); add this in later when we have the spot route
+const spotRoutes = require('./routes/spot');
 
 //import middleware
-const { authenticateJWT, authenticateWithClaims } = require('./middleware/auth.js');
+const {authenticateJWT, authenticateWithClaims } = require('./middleware/auth.js');
 //We'll have to add in the middleware that does the logging when we do it.
 
 // Start by defining the express app instance
@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 //In the case when we need to verify using middleware, we can do that here.
 app.use(sessionRoutes);
 app.use(userRoutes);
-//app.use(spotRoutes); //need to add way to verify user is logged in.
+app.use(authenticateJWT, spotRoutes); //need to add way to verify user is logged in.
 
 // Now that we've configured the app, make it listen for incoming requests
 app.listen(port, () => {

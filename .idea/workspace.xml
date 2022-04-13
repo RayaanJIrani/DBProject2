@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Made the post /session route work">
+    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Made slight changes. Will need to talk to you about the get session.js">
+      <change afterPath="$PROJECT_DIR$/routes/spot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/spots.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/spots.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/spots.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/spots.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/session.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/session.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/spots.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +43,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -52,6 +58,8 @@
       <option name="presentableId" value="Default" />
       <updated>1649703250579</updated>
       <workItem from="1649703251993" duration="524000" />
+      <workItem from="1649791186923" duration="6166000" />
+      <workItem from="1649798544211" duration="3436000" />
     </task>
     <task id="LOCAL-00001" summary="Added changes which can be used as a backbone. Note -- untested">
       <created>1649775758286</created>
@@ -81,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649786927601</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Made slight changes. Will need to talk to you about the get session.js">
+      <created>1649789353247</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649789353247</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +122,7 @@
     <MESSAGE value="These changes produce a product which has a minimally viable account route. I'm still making changes to allow for that route to do the following: (1) return all of the info for a newly registered use and (2) produce an error when not all fields are entered." />
     <MESSAGE value="I think that these are the last changes for a working post /account route" />
     <MESSAGE value="Made the post /session route work" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made the post /session route work" />
+    <MESSAGE value="Made slight changes. Will need to talk to you about the get session.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made slight changes. Will need to talk to you about the get session.js" />
   </component>
 </project>
