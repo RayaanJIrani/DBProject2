@@ -46,4 +46,29 @@ router.get('/spots', async  (req, res, next) => {
     }
 });
 
+
+router.post('/spots', async (req, res, next) => {
+    try {
+        const body = req.body;
+        console.log(body);
+        //checks to see if fan does not exist
+        if(result != result){
+            result = await users.createNewVehicle(body.Vehicle_type);
+        result1 = await users.createSpotID(body.id, body.Vehicle_type);
+        }
+        if(result.success) {
+            //if it is, it get's all the info about the user from the employe record
+            res.status(201).json(result1);
+        } else {
+            //if it isn't, it sends back an error message
+            res.status(400).json(result);
+        }
+        //need to add check if payload insufficient
+    } catch (err) {
+        console.error('Failed to create new user:', err);
+        res.status(500).json({ message: err.toString() });
+    }
+
+});
+
 module.exports = router;
