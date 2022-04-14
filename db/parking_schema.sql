@@ -5,97 +5,129 @@ VALUES ('Cowpokes Stadium','1 Cowpokes Road','Dallas'),
        ('Rodeo','1 Rodeo Way', 'Frisco');
 
 INSERT INTO Parking_lot(name, capacity, stadium)
-VALUES ('A lot',5,'Cowpokes Stadium'),
-       ('B lot',5,'Cowpokes Stadium'),
-       ('C lot',5,'Cowpokes Stadium'),
-       ('D lot',5,'Rodeo'),
-       ('E lot',5,'Rodeo'),
-       ('F lot',5,'Rodeo');
+VALUES ('A lot',5,1),
+       ('B lot',5,1),
+       ('C lot',5,1),
+       ('D lot',5,2),
+       ('E lot',5,2),
+       ('F lot',5,2);
 
 INSERT INTO Event(date, location_id, name)
-VALUES ('2022-01-01','Cowpokes Stadium','New Years day party'),
-       ('2022-01-02','Rodeo','Texas State Fair'),
-       ('2022-01-03','Cowpokes Stadium','Bob Marley Concert'),
-       ('2022-01-04','Rodeo','Superbowl');
+VALUES ('2022-01-01',1,'New Years day party'),
+       ('2022-01-02',2,'Texas State Fair'),
+       ('2022-01-03',1,'Bob Marley Concert'),
+       ('2022-01-04',2,'Superbowl');
 
 #The Cowpokes do not comply with the ADA
 INSERT INTO Parking_spot(parking_lot, event_id, is_disabled, is_used)
-VALUES ('A lot',1,FALSE,FALSE),
-       ('A lot',1,FALSE,FALSE),
-       ('A lot',1,FALSE,FALSE),
-       ('A lot',1,FALSE,FALSE),
-       ('A lot',1,FALSE,FALSE),
+VALUES (1,1,FALSE,FALSE),
+       (1,1,FALSE,FALSE),
+       (1,1,FALSE,FALSE),
+       (1,1,FALSE,FALSE),
+       (1,1,TRUE,TRUE),
+       (1,1,TRUE,TRUE),
+       (1,1,TRUE,TRUE),
 
-       ('B lot',1,FALSE,FALSE),
-       ('B lot',1,FALSE,FALSE),
-       ('B lot',1,FALSE,FALSE),
-       ('B lot',1,FALSE,FALSE),
-       ('B lot',1,FALSE,FALSE),
+       (2,1,FALSE,FALSE),
+       (2,1,FALSE,FALSE),
+       (2,1,FALSE,FALSE),
+       (2,1,FALSE,FALSE),
+       (2,1,TRUE,TRUE),
+       (2,1,TRUE,TRUE),
+       (2,1,TRUE,TRUE),
 
-       ('C lot',1,FALSE,FALSE),
-       ('C lot',1,FALSE,FALSE),
-       ('C lot',1,FALSE,FALSE),
-       ('C lot',1,FALSE,FALSE),
-       ('C lot',1,FALSE,FALSE),
 
-       ('D lot',2,FALSE,FALSE),
-       ('D lot',2,FALSE,FALSE),
-       ('D lot',2,FALSE,FALSE),
-       ('D lot',2,FALSE,FALSE),
-       ('D lot',2,FALSE,FALSE),
+       (3,1,FALSE,FALSE),
+       (3,1,FALSE,FALSE),
+       (3,1,FALSE,FALSE),
+       (3,1,FALSE,FALSE),
+       (3,1,TRUE,TRUE),
+       (3,1,TRUE,TRUE),
+       (3,1,TRUE,TRUE),
 
-       ('E lot',2,FALSE,FALSE),
-       ('E lot',2,FALSE,FALSE),
-       ('E lot',2,FALSE,FALSE),
-       ('E lot',2,FALSE,FALSE),
-       ('E lot',2,FALSE,FALSE),
+       (4,1,FALSE,FALSE),
+       (4,1,FALSE,FALSE),
+       (4,1,FALSE,FALSE),
+       (4,1,FALSE,FALSE),
+       (4,1,TRUE,TRUE),
+       (4,1,TRUE,TRUE),
+       (4,1,TRUE,TRUE),
 
-       ('F lot',2,FALSE,FALSE),
-       ('F lot',2,FALSE,FALSE),
-       ('F lot',2,FALSE,FALSE),
-       ('F lot',2,FALSE,FALSE),
-       ('F lot',2,FALSE,FALSE),
-       ('F lot',2,FALSE,FALSE),
 
-       ('A lot',3,FALSE,FALSE),
-       ('A lot',3,FALSE,FALSE),
-       ('A lot',3,FALSE,FALSE),
-       ('A lot',3,FALSE,FALSE),
-       ('A lot',3,FALSE,FALSE),
+       (5,1,FALSE,FALSE),
+       (5,1,FALSE,FALSE),
+       (5,1,FALSE,FALSE),
+       (5,1,FALSE,FALSE),
+       (5,1,TRUE,TRUE),
+       (5,1,TRUE,TRUE),
+       (5,1,TRUE,TRUE),
 
-       ('B lot',3,FALSE,FALSE),
-       ('B lot',3,FALSE,FALSE),
-       ('B lot',3,FALSE,FALSE),
-       ('B lot',3,FALSE,FALSE),
-       ('B lot',3,FALSE,FALSE),
+       (6,1,FALSE,FALSE),
+       (6,1,FALSE,FALSE),
+       (6,1,FALSE,FALSE),
+       (6,1,FALSE,FALSE),
+       (6,1,TRUE,TRUE),
+       (6,1,TRUE,TRUE),
+       (6,1,TRUE,TRUE),
 
-       ('C lot',3,FALSE,FALSE),
-       ('C lot',3,FALSE,FALSE),
-       ('C lot',3,FALSE,FALSE),
-       ('C lot',3,FALSE,FALSE),
-       ('C lot',3,FALSE,FALSE),
+       (1,2,FALSE,FALSE),
+       (1,2,FALSE,FALSE),
+       (1,2,FALSE,FALSE),
+       (1,2,FALSE,FALSE),
+       (1,2,TRUE,TRUE),
+       (1,2,TRUE,TRUE),
+       (1,2,TRUE,TRUE),
 
-       ('D lot',4,FALSE,FALSE),
-       ('D lot',4,FALSE,FALSE),
-       ('D lot',4,FALSE,FALSE),
-       ('D lot',4,FALSE,FALSE),
-       ('D lot',4,FALSE,FALSE),
+       (2,2,FALSE,FALSE),
+       (2,2,FALSE,FALSE),
+       (2,2,FALSE,FALSE),
+       (2,2,FALSE,FALSE),
+       (2,2,TRUE,TRUE),
+       (2,2,TRUE,TRUE),
+       (2,2,TRUE,TRUE),
 
-       ('E lot',4,FALSE,FALSE),
-       ('E lot',4,FALSE,FALSE),
-       ('E lot',4,FALSE,FALSE),
-       ('E lot',4,FALSE,FALSE),
-       ('E lot',4,FALSE,FALSE),
+       (3,2,FALSE,FALSE),
+       (3,2,FALSE,FALSE),
+       (3,2,FALSE,FALSE),
+       (3,2,FALSE,FALSE),
+       (3,2,TRUE,TRUE),
+       (3,2,TRUE,TRUE),
+       (3,2,TRUE,TRUE),
 
-       ('F lot',4,FALSE,FALSE),
-       ('F lot',4,FALSE,FALSE),
-       ('F lot',4,FALSE,FALSE),
-       ('F lot',4,FALSE,FALSE),
-       ('F lot',4,FALSE,FALSE),
-       ('F lot',4,FALSE,FALSE);
+       (4,2,FALSE,FALSE),
+       (4,2,FALSE,FALSE),
+       (4,2,FALSE,FALSE),
+       (4,2,FALSE,FALSE),
+       (4,2,TRUE,TRUE),
+       (4,2,TRUE,TRUE),
+       (4,2,TRUE,TRUE),
+
+       (5,2,FALSE,FALSE),
+       (5,2,FALSE,FALSE),
+       (5,2,FALSE,FALSE),
+       (5,2,FALSE,FALSE),
+       (5,2,TRUE,TRUE),
+       (5,2,TRUE,TRUE),
+       (5,2,TRUE,TRUE),
+
+       (6,2,FALSE,FALSE),
+       (6,2,FALSE,FALSE),
+       (6,2,FALSE,FALSE),
+       (6,2,FALSE,FALSE),
+       (6,2,TRUE,TRUE),
+       (6,2,TRUE,TRUE),
+       (6,2,TRUE,TRUE),
+
+       (1,3,FALSE,FALSE),
+       (1,3,FALSE,FALSE),
+       (1,3,FALSE,FALSE),
+       (1,3,FALSE,FALSE),
+       (1,3,TRUE,TRUE),
+       (1,3,TRUE,TRUE),
+       (1,3,TRUE,TRUE);
 
 #Fans must be added via API call
-/*
+
 
 #Representative of the total number of cowpoke fans
 INSERT INTO Fan(name, DL_id, is_disables,vehicle_type,license_plate)
@@ -109,14 +141,12 @@ VALUES ('A',1,FALSE,'Coupe','A'),
        ('H',8,FALSE,'Truck','H');
 
 
- */
-
 
 INSERT INTO Entry_Point(parking_lot, event_id, is_open)
-VALUES ('A lot',1,TRUE),
-       ('D lot',2,TRUE),
-       ('B lot',3,TRUE),
-       ('E lot',4,TRUE);
+VALUES (1,1,TRUE),
+       (4,2,TRUE),
+       (2,3,TRUE),
+       (5,4,TRUE);
 
 
 #These items have to be done via the API

@@ -14,16 +14,19 @@ const spotRoutes = require('./routes/spot');
 //import middleware
 const {authenticateJWT, authenticateWithClaims } = require('./middleware/auth.js');
 //We'll have to add in the middleware that does the logging when we do it.
+const {logger} = require('./middleware/logger.js');
 
 // Start by defining the express app instance
 const app = express();
 const port = 3000;
 
+
+
 // On every request, this gets called first. This is the first step in our "middleware chain".
 // We put this before anything else because we know our route handlers are going to need connections
 // to the database
 app.use(bodyParser.json());
-
+app.use(logger);
 
 //This tells the app to use the routes we've imported.
 //In the case when we need to verify using middleware, we can do that here.

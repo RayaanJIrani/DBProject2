@@ -1,4 +1,3 @@
-//This probably 
 const jwt = require("jsonwebtoken");
 
 const accessTokenSecret = 'mysupercoolsecret';
