@@ -31,17 +31,35 @@ Then run the following commands:
 This route is used to register a user.
 
 An example of a valid input and response is given:
-![](../../../../../../var/folders/vy/7y1jdct53qsfvy12s014cdj00000gn/T/TemporaryItems/NSIRD_screencaptureui_S8IJH2/Screen Shot 2022-04-15 at 10.22.28 PM.png)
-
+![](screenshots/Screen Shot 2022-04-15 at 10.40.14 PM.png)
 When no parameters are inputed the error response is,
-![](../../../../../../var/folders/vy/7y1jdct53qsfvy12s014cdj00000gn/T/TemporaryItems/NSIRD_screencaptureui_A2vIMj/Screen Shot 2022-04-15 at 10.23.25 PM.png)
+![](screenshots/Screen Shot 2022-04-15 at 10.40.34 PM.png)
 
 #POST /Session
 This route is used to create a session token for a user.
-![](../../../../../../var/folders/vy/7y1jdct53qsfvy12s014cdj00000gn/T/TemporaryItems/NSIRD_screencaptureui_wXnDP7/Screen Shot 2022-04-15 at 10.24.44 PM.png)
+![](screenshots/Screen Shot 2022-04-15 at 10.29.17 PM.png)
 
 When the incorrect parameters are inputed the error response is,
-![](../../../../../../var/folders/vy/7y1jdct53qsfvy12s014cdj00000gn/T/TemporaryItems/NSIRD_screencaptureui_RgQcRI/Screen Shot 2022-04-15 at 10.25.15 PM.png)
+![](screenshots/Screen Shot 2022-04-15 at 10.29.31 PM.png)
 
 #GET /Session
 This route is used to get all of the user's account info.
+It (alongside all future routes) requires a session token.
+![](screenshots/Screen Shot 2022-04-15 at 10.41.57 PM.png)
+
+When the token is not passed or incorrect the following response is given:
+![](screenshots/Screen Shot 2022-04-15 at 10.42.07 PM.png)
+
+#GET /Spots
+This route is used to get all of the spots which meet the given filters.
+![](screenshots/Screen Shot 2022-04-15 at 10.44.17 PM.png)
+
+When the filters change so does the response.
+![](screenshots/Screen Shot 2022-04-15 at 10.44.32 PM.png)
+
+And when there is no matches to the filters the following response is given:
+![](screenshots/Screen Shot 2022-04-15 at 10.44.44 PM.png)
+
+Filters are optional and when none are used, all of the spots are returned.
+![](screenshots/Screen Shot 2022-04-15 at 10.46.24 PM.png)
+

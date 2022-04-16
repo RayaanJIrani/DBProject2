@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Project finished. Now just need to add readme.md">
+    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Do the screenshots save?">
+      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.29.17 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.29.31 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.40.14 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.40.34 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.41.57 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.42.07 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.44.17 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.44.32 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.44.44 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 9.17.00 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 9.17.13 PM.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -160,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650078093272</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Do the screenshots save?">
+      <created>1650079555099</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1650079555099</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +214,7 @@
     <MESSAGE value="Finished route" />
     <MESSAGE value="Added delete route (and is tested)" />
     <MESSAGE value="Project finished. Now just need to add readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project finished. Now just need to add readme.md" />
+    <MESSAGE value="Do the screenshots save?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Do the screenshots save?" />
   </component>
 </project>
