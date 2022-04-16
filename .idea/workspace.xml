@@ -4,20 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Do the screenshots save?">
-      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.29.17 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.29.31 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.40.14 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.40.34 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.41.57 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.42.07 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.44.17 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.44.32 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.44.44 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 9.17.00 PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 9.17.13 PM.png" afterDir="false" />
+    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="test to see if screenshots save">
+      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.56.13 PM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 10.57.51 PM.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/Screen Shot 2022-04-15 at 9.17.13 PM.png" beforeDir="false" />
     </list>
     <list id="7fcee385-2256-48ba-9685-e24acd3a74bc" name="Changes by pgiad" comment="">
       <change beforePath="$PROJECT_DIR$/controllers/spots.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/spots.js" afterDir="false" />
@@ -178,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650079555099</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="test to see if screenshots save">
+      <created>1650080837715</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1650080837715</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +214,7 @@
     <MESSAGE value="Added delete route (and is tested)" />
     <MESSAGE value="Project finished. Now just need to add readme.md" />
     <MESSAGE value="Do the screenshots save?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Do the screenshots save?" />
+    <MESSAGE value="test to see if screenshots save" />
+    <option name="LAST_COMMIT_MESSAGE" value="test to see if screenshots save" />
   </component>
 </project>

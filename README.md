@@ -63,3 +63,14 @@ And when there is no matches to the filters the following response is given:
 Filters are optional and when none are used, all of the spots are returned.
 ![](screenshots/Screen Shot 2022-04-15 at 10.46.24 PM.png)
 
+#POST /Allocation
+This route is used to generate a parking allocation.
+![](screenshots/Screen Shot 2022-04-15 at 9.17.00 PM.png)
+
+#PUT /Allocation
+This route is used to update a parking allocation.
+![](screenshots/Screen Shot 2022-04-15 at 10.56.13 PM.png)
+
+#DELETE /Allocation
+This route is used to delete a parking allocation.
+![](screenshots/Screen Shot 2022-04-15 at 10.57.51 PM.png)
