@@ -24,9 +24,16 @@ const deleteAllocation = async (allocation_id) => {
     return result;
 }
 
+const swapVehicle = async(allocation_id,DL_id) => {
+    const query = knex(Allocation).where({id : allocation_id}).update({Fan : DL_id});
+    const result = await query;
+    return result;
+}
+
 
 module.exports = {
     makeAllocation,
     getAllocation,
-    deleteAllocation
+    deleteAllocation,
+    swapVehicle
 }

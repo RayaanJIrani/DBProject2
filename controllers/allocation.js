@@ -72,6 +72,13 @@ const checkIfAllocationExists = async (allocation_id) => {
 
 const deleteAllocation = async(allocation_id) => {
     result = await allocationModel.deleteAllocation(allocation_id);
+
+}
+
+const swapVehicle = async(allocation_id,DL_id) => {
+    await allocationModel.swapVehicle(allocation_id,DL_id);
+    const result = await allocationModel.getAllocation(allocation_id);
+    return result[0];
 }
 
 module.exports = {
@@ -81,5 +88,6 @@ module.exports = {
     checkIfSpotIsFree,
     makeAllocation,
     checkIfAllocationExists,
-    deleteAllocation
+    deleteAllocation,
+    swapVehicle
 }

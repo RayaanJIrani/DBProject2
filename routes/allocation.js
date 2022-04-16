@@ -50,7 +50,32 @@ router.post('/allocation', async (req, res, next) => { //was initally POST /Spot
 
 router.put('/allocation/:allocation_id', async (req, res, next) => {
     try {
-        //tries the update the allocation
+        //checks to see if the allocation exists
+        const allocationDoesExist = await controller.checkIfAllocationExists(req.params.allocation_id);
+        if(!allocationDoesExist){
+            //sends and error message
+            res.status(400).json({
+                "Error": "Allocation does not exist"
+            });
+            return;
+        }
+        //checks to see if the vehicle exists and if not, creates it
+        const vehicleDoesExist = await controller.checkIfVehicleExists(req.body.DL_id);
+        if(!vehicleDoesExist){
+            //creates a new vehicle based on info
+            //if not enough info about vehicle is given, will return with an error
+            const vehicle = await controller.createVehicle(req.body.name,req.body.DL_id,req.body.type,req.body.license_plate);
+            if(vehicle["Error"] == "Incorrect Inputs Provided"){
+                res.status(400).json({
+                    "Error": "Incorrect Inputs Provided"
+                });
+                return;
+            }
+        }
+        //swaps the vehicle in the current allocation and the new one
+        const allocation = await controller.swapVehicle(req.params.allocation_id,req.body.DL_id);
+        res.status(200).json(allocation);
+
     } catch (err) {
         console.error('Failed to update the allocation:', err);
         res.status(500).json({ message: err.toString() });
