@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Untested route post /allocation made">
+    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Finished route">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/allocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/allocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/stadium.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/stadium.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/allocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/allocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/vehicle.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/vehicle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/allocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/allocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
     </list>
     <list id="7fcee385-2256-48ba-9685-e24acd3a74bc" name="Changes by pgiad" comment="">
       <change beforePath="$PROJECT_DIR$/controllers/spots.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/spots.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/allocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/allocation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650068701857</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Finished route">
+      <created>1650075503928</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1650075503928</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +180,7 @@
     <MESSAGE value="Added stuff to the get spots.&#10;Also, changed DB configuration." />
     <MESSAGE value="Finished and tested the get spots route." />
     <MESSAGE value="Untested route post /allocation made" />
-    <option name="LAST_COMMIT_MESSAGE" value="Untested route post /allocation made" />
+    <MESSAGE value="Finished route" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished route" />
   </component>
 </project>

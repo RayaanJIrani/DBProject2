@@ -15,11 +15,18 @@ const makeAllocation = async (Employee_id, Fan, Parking_spot_id) => {
 const getAllocation = async(Allocation_id) => {
     const query = knex(Allocation).where({id : Allocation_id}).select('*');
     const result = await query;
-    return result[0];
+    return result;
+}
+
+const deleteAllocation = async (allocation_id) => {
+    const query = knex(Allocation).where({id : allocation_id}).del();
+    const result = await query;
+    return result;
 }
 
 
 module.exports = {
     makeAllocation,
-    getAllocation
+    getAllocation,
+    deleteAllocation
 }

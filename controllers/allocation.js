@@ -54,8 +54,24 @@ const makeAllocation = async(DL_id,spotId, employee_id) => {
   //  const employee_id = await employeeModel.findUserByUsername(username)[0].employee_id;
     const allocationID = await allocationModel.makeAllocation(employee_id, DL_id,spotId);
     const result = await allocationModel.getAllocation(allocationID);
-    return result;
+    return result[0];
     
+}
+
+const checkIfAllocationExists = async (allocation_id) => {
+    if(allocation_id == null) {
+        return false;
+    }
+    //returns the number of allocations with that allocation ID
+    const num = await allocationModel.getAllocation(allocation_id);
+    if (num.length === 0) {
+        return false;
+    }
+    return true;
+}
+
+const deleteAllocation = async(allocation_id) => {
+    result = await allocationModel.deleteAllocation(allocation_id);
 }
 
 module.exports = {
@@ -63,5 +79,7 @@ module.exports = {
     createVehicle,
     checkIfSpotExists,
     checkIfSpotIsFree,
-    makeAllocation
+    makeAllocation,
+    checkIfAllocationExists,
+    deleteAllocation
 }
