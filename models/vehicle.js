@@ -6,9 +6,10 @@ const getVehicle = async (DL_id) => {
 }
 
 const createVehicle = async (name,DL_id,type,license_plate) => {
+    is_disables = false;
     const result = await knex('Fan').insert({
         name,
-        false, //none of our fans are disabled
+        is_disables, //none of our fans are disabled
         DL_id,
         Vehicle_type: type,
         license_plate

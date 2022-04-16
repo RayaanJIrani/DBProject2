@@ -5,6 +5,8 @@ ALTER USER 'root'@localhost IDENTIFIED WITH mysql_native_password BY 'password';
 flush privileges;
 
 SELECT * FROM Employee;
+SELECT * FROM Parking_allocation;
+SELECT * FROM Fan;
 
 
 CREATE TABLE Stadium(

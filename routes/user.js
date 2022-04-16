@@ -14,7 +14,7 @@ router.post('/account', async (req, res, next) => { //was initally just '/'. Mak
     try {
         const body = req.body;
         console.log(body);
-        result = await users.createNewUser(body.username, body.password, body.entryPointLot, body.entryPointEevnt);
+        result = await users.createNewUser(body.username, body.password, body.entryPoint);
         //checks to see if insertion is good
         if(result.success) {
             //if it is, it get's all the info about the user from the employe record

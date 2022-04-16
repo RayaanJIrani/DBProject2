@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 
 const USER_TABLE = 'Employee';
 
-const createNewUser = async (username, password,entryPointLot, entryPointEvent) => {
+const createNewUser = async (username, password,entryPoint) => {
     if(!username || !password) {
         return {
             success: false,
@@ -16,7 +16,7 @@ const createNewUser = async (username, password,entryPointLot, entryPointEvent) 
     const hashedPassword = await bcrypt.hash(password, salt);
     console.log('Hashed password', hashedPassword);
 
-    const query = knex(USER_TABLE).insert({ username, password: hashedPassword, Entry_Point_lot: entryPointLot, Entry_Point_event: entryPointEvent });
+    const query = knex(USER_TABLE).insert({ username, password: hashedPassword, Entry_Point_id : entryPoint });
     console.log('Raw query for createNewUser:', query.toString());
     result = await query;
     result['success'] = true;

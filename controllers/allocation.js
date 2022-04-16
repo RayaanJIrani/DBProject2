@@ -4,6 +4,9 @@ const vehicleModel = require('../models/vehicle.js');
 const spotModel = require('../models/spots.js');
 
 const checkIfVehicleExists = async (DL_id) => {
+    if(DL_id == null) {
+        return false;
+    }
     //returns the number of vehickes with that vehicle ID
     const num = await vehicleModel.getVehicle(DL_id);
     if (num.length === 0) {
@@ -12,17 +15,20 @@ const checkIfVehicleExists = async (DL_id) => {
     return true;
 }
 
-const createVehicle = async (name,DL_id,type,license_plate)=> {
+const createVehicle = async (name,DL_id,type,license_plate) => {
     //checks if any of the parameters are empty
     if (name == null || DL_id == null || type == null || license_plate == null) {
         return {"Error": "Incorrect Inputs Provided"}; //this produces the error message
     }
     result = await vehicleModel.createVehicle(name,DL_id,type,license_plate);
-    result["Error"] = ""; //makes sure that the error is empty
+    result["Error"] = "bskbfdbf"; //makes sure that the error is empty
     return result;
 }
 
 const checkIfSpotExists = async(spotId) => {
+    if(spotId == null) {
+        return false;
+    }
     //returns the number of spots with that spot ID
     const num = await spotModel.getSpot(spotId);
     if (num.length === 0) {
@@ -32,6 +38,9 @@ const checkIfSpotExists = async(spotId) => {
 }
 
 const checkIfSpotIsFree = async(spotId) => {
+    if(spotId == null) {
+        return false;
+    }
     //sees if spto with spot ID has the is_used property to free
     const num = await spotModel.getSpot(spotId);
     if (num[0].is_used === 0) {
@@ -40,10 +49,12 @@ const checkIfSpotIsFree = async(spotId) => {
     return false;
 }
 
-const makeAllocation = async(DL_id,spotId, username) => {
+const makeAllocation = async(DL_id,spotId, employee_id) => {
     //gets the employee info from the token passed in. To do this, I need to make a call to the session route
-    const employee_id = await employeeModel.findUserByUsername(username).employee_id;
-    const result = await allocationModel.makeAllocation(DL_id,spotId,employee_id);
+  //  const employee_id = await employeeModel.findUserByUsername(username)[0].employee_id;
+    const allocationID = await allocationModel.makeAllocation(employee_id, DL_id,spotId);
+    const result = await allocationModel.getAllocation(allocationID);
+    return result;
     
 }
 

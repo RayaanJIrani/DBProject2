@@ -16,8 +16,9 @@ router.post('/allocation', async (req, res, next) => { //was initally POST /Spot
                 res.status(400).json({
                     "Error": "Incorrect Inputs Provided"
                 });
+                return;
             }
-        } 
+        }
         //now we check if the spot exists and if it is free
         const spotDoesExist = await controller.checkIfSpotExists(body.spotId);
         if(!spotDoesExist){
@@ -25,16 +26,21 @@ router.post('/allocation', async (req, res, next) => { //was initally POST /Spot
             res.status(400).json({
                 "Error": "Spot does not exist"
             });
+            return;
         }
         const spotIsFree = await controller.checkIfSpotIsFree(body.spotId);
+        console.log("Line check 6");
         if(!spotIsFree){
             //sends and error message
+            console.log("Line check 7");
             res.status(400).json({
                 "Error": "Spot is not free"
             });
+            return;
         }
         //now we make the allocation
-        const allocation = await controller.makeAllocation(body.DL_id,body.spotId, req.user.username);
+        const allocation = await controller.makeAllocation(body.DL_id,body.spotId, body.employeeId);
+        res.status(201).json(allocation);
     } catch (err) {
         console.error('Failed to create new allocation:', err);
         res.status(500).json({ message: err.toString() });
