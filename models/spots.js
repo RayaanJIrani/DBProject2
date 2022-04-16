@@ -1,6 +1,10 @@
 const knex = require('../database/knex');
 
 
+const getSpot = async (spotID) => {
+    return knex('Parking_spot').where('id',spotID);
+}
+
 const getSpots = async (filters, stadiumParking) => {
     return knex('Parking_spot')
         .where(filters) // this uses the filter function to filter the spots based on the selected cirtia
@@ -35,6 +39,7 @@ const createSpotID = async (id, Vehicle_type) => {
 
     
 module.exports = {
+        getSpot,
         getSpots,
         getParkingLots,
         createSpotID,

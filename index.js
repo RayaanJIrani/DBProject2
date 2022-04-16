@@ -10,6 +10,7 @@ const mysql = require('mysql');
 const sessionRoutes = require('./routes/session');
 const userRoutes = require('./routes/user');
 const spotRoutes = require('./routes/spot');
+const allocationRoutes = require('./routes/allocation');
 
 //import middleware
 const {authenticateJWT, authenticateWithClaims } = require('./middleware/auth.js');
@@ -33,6 +34,7 @@ app.use(logger);
 app.use(sessionRoutes);
 app.use(userRoutes);
 app.use(authenticateJWT, spotRoutes); //need to add way to verify user is logged in.
+app.use(authenticateJWT,  allocationRoutes); //adds allocation routes.
 
 // Now that we've configured the app, make it listen for incoming requests
 app.listen(port, () => {
