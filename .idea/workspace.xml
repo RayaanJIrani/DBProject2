@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Added delete route (and is tested)">
+    <list default="true" id="f987dfae-c841-46b8-917d-bdf3746df289" name="Changes" comment="Project finished. Now just need to add readme.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/allocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/allocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/allocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/allocation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/allocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/allocation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <list id="7fcee385-2256-48ba-9685-e24acd3a74bc" name="Changes by pgiad" comment="">
       <change beforePath="$PROJECT_DIR$/controllers/spots.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/spots.js" afterDir="false" />
@@ -26,14 +24,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/routes/allocation.js">
-      <ranges>
-        <range start1="52" end1="53" start2="52" end2="78" changelist="f987dfae-c841-46b8-917d-bdf3746df289" />
-        <range start1="63" end1="64" start2="88" end2="101" changelist="7fcee385-2256-48ba-9685-e24acd3a74bc" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -163,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650076403374</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Project finished. Now just need to add readme.md">
+      <created>1650078093272</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1650078093272</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +195,7 @@
     <MESSAGE value="Untested route post /allocation made" />
     <MESSAGE value="Finished route" />
     <MESSAGE value="Added delete route (and is tested)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added delete route (and is tested)" />
+    <MESSAGE value="Project finished. Now just need to add readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project finished. Now just need to add readme.md" />
   </component>
 </project>
